@@ -15,6 +15,9 @@ public class OwlBird : Bird
     {
         if (State == BirdState.Thrown && !_hasExplode)
         {
+            GameObject ExplosionEffectIns = Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
+            Destroy(ExplosionEffectIns, 5);
+
             _hasExplode = true;
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, _explosionRadius);
             foreach(Collider2D col in colliders)
@@ -22,10 +25,7 @@ public class OwlBird : Bird
                 Vector2 dir = col.transform.position - transform.position;
                 col.GetComponent<Rigidbody2D>().AddForce(dir * _explosionForce);
             }
-            RigidBody.AddForce(new Vector2(_explosionForce, 0), ForceMode2D.Impulse);
 
-            GameObject ExplosionEffectIns = Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
-            Destroy(ExplosionEffectIns, 30);
         }
     }
 

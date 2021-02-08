@@ -145,9 +145,9 @@ MonoBehaviour:
   SlingShooter: {fileID: 530013824}
   TrailController: {fileID: 850154802}
   Birds:
-  - {fileID: 1274287763}
-  - {fileID: 1975577202}
   - {fileID: 1565479887}
+  - {fileID: 1975577202}
+  - {fileID: 1274287763}
   Enemies:
   - {fileID: 1427769279}
   TapCollider: {fileID: 205486321}
@@ -787,7 +787,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274287761}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.95, y: -1.01, z: 0}
+  m_LocalPosition: {x: -2.55, y: -1.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1300265326}
@@ -1251,7 +1251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565479882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.76, y: -1.03, z: 0}
+  m_LocalPosition: {x: -0.73, y: -1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1300265326}
@@ -1545,7 +1545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975577200}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.06, y: -1.01, z: 0}
+  m_LocalPosition: {x: -1.63, y: -1.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1300265326}
